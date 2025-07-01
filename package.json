@@ -9,12 +9,32 @@
     "test:coverage": "hardhat coverage",
     "test:gas": "REPORT_GAS=true hardhat test",
     "node": "hardhat node",
-    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
-    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
-    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli",
-    "verify:sepolia": "hardhat verify --network sepolia",
-    "verify:goerli": "hardhat verify --network goerli",
-    "clean": "hardhat clean"
+    "clean": "hardhat clean",
+    
+    "deploy:localhost": "hardhat run scripts/deploy-enhanced.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy-enhanced.js --network sepolia",
+    "deploy:goerli": "hardhat run scripts/deploy-enhanced.js --network goerli",
+    "deploy:mainnet": "hardhat run scripts/deploy-enhanced.js --network mainnet",
+    
+    "deploy:legacy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:legacy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:legacy:goerli": "hardhat run scripts/deploy.js --network goerli",
+    
+    "verify": "hardhat run scripts/verify-contract.js",
+    "verify:localhost": "hardhat run scripts/verify-contract.js --network localhost",
+    "verify:sepolia": "hardhat run scripts/verify-contract.js --network sepolia",
+    "verify:goerli": "hardhat run scripts/verify-contract.js --network goerli",
+    "verify:mainnet": "hardhat run scripts/verify-contract.js --network mainnet",
+    "verify:all": "hardhat run scripts/verify-contract.js --all",
+    
+    "deployment:list": "node scripts/deployment-manager-cli.js list",
+    "deployment:show": "node scripts/deployment-manager-cli.js show",
+    "deployment:export": "node scripts/deployment-manager-cli.js export",
+    "deployment:frontend": "node scripts/deployment-manager-cli.js frontend",
+    "deployment:check": "node scripts/deployment-manager-cli.js check",
+    "deployment:cleanup": "node scripts/deployment-manager-cli.js cleanup",
+    "deployment:networks": "node scripts/deployment-manager-cli.js networks",
+    "deployment:help": "node scripts/deployment-manager-cli.js help"
   },
   "keywords": ["blockchain", "ethereum", "erc20", "defi", "hardhat", "web3"],
   "author": "Web3开发工程师",

@@ -1,0 +1,16 @@
+{
+  "localhost": {
+    "chainId": 31337,
+    "contracts": {
+      "MyToken": {
+        "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+        "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "deploymentTime": "2025-07-01T08:44:51.919Z",
+        "txHash": "0x8ee8b09d05b35ab2cb5f88abf71afa6e710d6443fa199d78f1a695d24701cce1",
+        "gasUsed": "1951246",
+        "verified": false
+      }
+    },
+    "lastUpdated": "2025-07-01T08:44:51.943Z"
+  }
+}
